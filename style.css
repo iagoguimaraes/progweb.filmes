@@ -1,0 +1,146 @@
+body{
+	background-color: white;
+}
+
+article{
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
+	padding: 10px;
+	margin: 10px 0 0 0;
+}
+
+article img{
+	float: left;
+}
+
+article div{
+	margin-left: 175px;
+}
+
+article footer{
+	clear: both;
+}
+
+article:hover{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	cursor: pointer;
+	transition: 1s;
+}
+
+article:hover img{
+	transform: scale(1,1.1);
+	transition: 1s;
+}
+
+.filme.drama{
+	background-color: hsla(280, 100%, 80%, 1);
+}
+
+.filme.drama h1{
+	color: hsla(280, 100%, 10%, 1);
+}
+
+.filme.drama p{
+	color: hsla(280, 100%, 30%, 1);
+}
+
+
+.filme.romance{
+	background-color: hsla(310, 100%, 80%, 1);
+}
+
+.filme.romance h1{
+	color: hsla(310, 100%, 10%, 1);
+}
+
+.filme.romance p{
+	color: hsla(310, 100%, 30%, 1);
+}
+
+
+.filme.terror, .filme.suspense{
+	background-color: hsla(0, 100%, 0%, 1);
+}
+
+.filme.terror h1, .filme.suspense h1{
+	color: hsla(0, 100%, 100%, 1);
+}
+
+.filme.terror p, .filme.suspense p{
+	color: hsla(0, 0%, 50%, 1);
+}
+
+
+.filme.comedia{
+	background-color: hsla(60, 100%, 80%, 1);
+}
+
+.filme.comedia h1{
+	color: hsla(60, 100%, 10%, 1);
+}
+
+.filme.comedia p{
+	color: hsla(60, 100%, 30%, 1);
+}
+
+
+.filme.animacao{
+	background-color: hsla(120, 100%, 80%, 1);
+}
+
+.filme.animacao h1{
+	color: hsla(120, 100%, 10%, 1);
+}
+
+.filme.animacao p{
+	color: hsla(120, 100%, 30%, 1);
+}
+
+
+.filme.acao{
+	background-color: hsla(0, 100%, 80%, 1);
+}
+
+.filme.acao h1{
+	color: hsla(0, 100%, 10%, 1);
+}
+
+.filme.acao p{
+	color: hsla(0, 100%, 30%, 1);
+}
+
+
+
+.filme.aventura{
+	background-color: hsla(240, 100%, 80%, 1);
+}
+
+.filme.aventura h1{
+	color: hsla(240, 100%, 10%, 1);
+}
+
+.filme.aventura p{
+	color: hsla(240, 100%, 30%, 1);
+}
+
+.filme.romance.erotico{
+	background: #cb5fb3;
+	background: -moz-linear-gradient(top, hsla(313,51%,58%,1) 0%, hsla(316,81%,38%,1) 50%, hsla(320,69%,58%,1) 100%);
+	background: -webkit-linear-gradient(top, hsla(313,51%,58%,1) 0%,hsla(316,81%,38%,1) 50%,hsla(320,69%,58%,1) 100%);
+	background: linear-gradient(to bottom, hsla(313,51%,58%,1) 0%,hsla(316,81%,38%,1) 50%,hsla(320,69%,58%,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb5fb3', endColorstr='#de48ac',GradientType=0 ); 
+}
+
+.filme.romance.erotico p{
+	color: hsla(0, 100%, 100%, 1);
+}
+
+.filme.suspense.fantasia{
+	background: #405f94;
+	background: -moz-linear-gradient(top, hsla(218,40%,42%,1) 0%, hsla(0,37%,18%,1) 100%);
+	background: -webkit-linear-gradient(top, hsla(218,40%,42%,1) 0%,hsla(0,37%,18%,1) 100%);
+	background: linear-gradient(to bottom, hsla(218,40%,42%,1) 0%,hsla(0,37%,18%,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#405f94', endColorstr='#3f1d1d',GradientType=0 );
+}
+
