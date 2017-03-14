@@ -1,8 +1,41 @@
-body{
-	background-color: white;
+html, body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#menu{
+	position: fixed;
+	top: 0;
+	padding-top: 15px;
+	height: 30px;
+	width: 100%;
+	border-bottom: 2px solid hsl(0,0%,50%);
+	background-color: hsla(0,0%,0%,1);
+	z-index: 1;
+}
+
+#menu .menu-item{
+	display: inline;
+	border: 2px solid hsl(0,0%,0%);
+	border-radius: 5px;
+	padding: 5px;
+	margin: 0 5px 0 5px;
+	background-color: hsla(0,100%,100%,1);
+}
+
+#menu .menu-item:hover{
+	cursor: pointer;
+	border-color: yellow;
+}
+
+#menu .menu-item.ativo{
+	background-color: hsl(150,100%,50%);
 }
 
 article{
+	position: relative;
+	top: 50px;
 	border-top: 2px solid gray;
 	border-bottom: 2px solid gray;
 	padding: 10px;
@@ -10,10 +43,12 @@ article{
 }
 
 article img{
+	position: relative;
 	float: left;
 }
 
 article div{
+	position: relative;
 	margin-left: 175px;
 }
 
@@ -21,20 +56,12 @@ article footer{
 	clear: both;
 }
 
-article:hover{
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
-	cursor: pointer;
-	transition: 1s;
-}
-
-article:hover img{
-	transform: scale(1,1.1);
-	transition: 1s;
+.filme{
+	display: none;
 }
 
 .filme.drama{
-	background-color: hsla(280, 100%, 80%, 1);
+	background-color: hsla(280, 100%, 80%, 0.5);
 }
 
 .filme.drama h1{
@@ -45,9 +72,13 @@ article:hover img{
 	color: hsla(280, 100%, 30%, 1);
 }
 
+body.drama .drama{
+	display: block;
+}
+
 
 .filme.romance{
-	background-color: hsla(310, 100%, 80%, 1);
+	background-color: hsla(310, 100%, 80%, 0.5);
 }
 
 .filme.romance h1{
@@ -58,9 +89,13 @@ article:hover img{
 	color: hsla(310, 100%, 30%, 1);
 }
 
+body.romance .romance{
+	display: block;
+}
+
 
 .filme.terror, .filme.suspense{
-	background-color: hsla(0, 100%, 0%, 1);
+	background-color: hsla(0, 100%, 0%, 0.5);
 }
 
 .filme.terror h1, .filme.suspense h1{
@@ -68,12 +103,16 @@ article:hover img{
 }
 
 .filme.terror p, .filme.suspense p{
-	color: hsla(0, 0%, 50%, 1);
+	color: hsla(0, 0%, 100%, 1);
+}
+
+body.terror .terror{
+	display: block;
 }
 
 
 .filme.comedia{
-	background-color: hsla(60, 100%, 80%, 1);
+	background-color: hsla(60, 100%, 80%, 0.5);
 }
 
 .filme.comedia h1{
@@ -83,10 +122,13 @@ article:hover img{
 .filme.comedia p{
 	color: hsla(60, 100%, 30%, 1);
 }
+body.comedia .comedia{
+	display: block;
+}
 
 
 .filme.animacao{
-	background-color: hsla(120, 100%, 80%, 1);
+	background-color: hsla(120, 100%, 80%, 0.5);
 }
 
 .filme.animacao h1{
@@ -97,9 +139,13 @@ article:hover img{
 	color: hsla(120, 100%, 30%, 1);
 }
 
+body.animacao .animacao{
+	display: block;
+}
+
 
 .filme.acao{
-	background-color: hsla(0, 100%, 80%, 1);
+	background-color: hsla(0, 100%, 80%, 0.5);
 }
 
 .filme.acao h1{
@@ -110,10 +156,14 @@ article:hover img{
 	color: hsla(0, 100%, 30%, 1);
 }
 
+body.acao .acao{
+	display: block;
+}
+
 
 
 .filme.aventura{
-	background-color: hsla(240, 100%, 80%, 1);
+	background-color: hsla(240, 100%, 80%, 0.5);
 }
 
 .filme.aventura h1{
@@ -122,6 +172,10 @@ article:hover img{
 
 .filme.aventura p{
 	color: hsla(240, 100%, 30%, 1);
+}
+
+body.aventura .aventura{
+	display: block;
 }
 
 .filme.romance.erotico{
@@ -143,4 +197,44 @@ article:hover img{
 	background: linear-gradient(to bottom, hsla(218,40%,42%,1) 0%,hsla(0,37%,18%,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#405f94', endColorstr='#3f1d1d',GradientType=0 );
 }
+
+body.erotico .erotico{
+	display: block;
+}
+
+body.fantasia .fantasia{
+	display: block;
+}
+
+body.historico .historico{
+	display: block;
+}
+
+body.musical .musical{
+	display: block;
+}
+
+body.familia .familia{
+	display: block;
+}
+
+body.suspense .suspense{
+	display: block;
+}
+
+body.biografia .biografia{
+	display: block;
+}
+
+body.policial .policial{
+	display: block;
+}
+
+body.guerra .guerra{
+	display: block;
+}
+
+
+
+
 
